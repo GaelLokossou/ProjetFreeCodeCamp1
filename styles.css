@@ -1,0 +1,99 @@
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section de bienvenue */
+#welcome-section {
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+/* Section Projets */
+#projects {
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+.project-tile {
+  margin: 20px 0;
+}
+
+.project-tile a {
+  font-size: 1.5rem;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  text-decoration: underline;
+}
+
+/* Barre de navigation */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #34495e;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navbar li {
+  margin-right: 20px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Lien vers mon profil GitHub */
+#profile-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+#profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Requêtes media */
+@media screen and (max-width: 768px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+  #navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
